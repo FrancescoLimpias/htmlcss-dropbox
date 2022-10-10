@@ -9,7 +9,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
 
-    background-color: white;
+    background-color: #b4d0e7;
 }
 
 .pager{
@@ -25,6 +25,7 @@ body{
     height: 75px;
 
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.308);
+    background-color: white;
 }
 #nav-list{
     display: flex;
@@ -36,7 +37,7 @@ body{
 /* MAIN PAGER */ 
 /* Header */
 #main-pager > header{
-    background-color: #b4d0e7;
+    /* background-color: #b4d0e7; */
 }
 #hero > div{
     display: flex;
@@ -55,7 +56,9 @@ body{
 /* /Header */
 
 /* Main */
-
+main{
+    background-color: white;
+}
 #plans{
     display: flex;
     justify-content: space-between;
