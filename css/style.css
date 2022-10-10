@@ -56,6 +56,26 @@ body{
 
 /* Main */
 
+#plans{
+    display: flex;
+    justify-content: space-between;
+}
+.plan{
+    flex: 0 0 30%;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.plan *:not(hr){
+    padding: 0 1em;
+}
+.plan .target{
+    display: block;
+    text-align: center;
+}
+.plan .row span{
+    display: inline-block;
+}
 /* /Main */
 /* /MAIN PAGER */
 
@@ -64,5 +84,12 @@ body{
 /* BOTTOM PAGER */
 #bottom-pager{
     height: 400px;
+}
+footer{
+    background-color: #000000;
+    color: white;
+}
+footer a{
+    color: white;
 }
 /* /BOTTOM PAGER */
