@@ -1,0 +1,14 @@
+/* GENERAL SETUP  */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+
+    /* Testing Mode  */
+    /* border: 1px dashed orange; */
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    
+    color: black;
+    background-color: white;
+}
