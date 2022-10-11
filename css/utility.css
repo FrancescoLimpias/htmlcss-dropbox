@@ -12,21 +12,20 @@
     This helps improving overall page responsiveness
 
 */
-body>* {
+.resp-parent {
     display: flex;
     justify-content: center;
 
     width: 100%;
 }
 
-body>*:before,
-body>*:after {
+.resp-parent:before,
+.resp-parent:after {
     flex: 0 1 15%;
     content: "";
 }
 
-.page-container {
+.resp-child {
     flex: 0 0 70%;
-    min-width: 500px;
-    padding: 0 10px;
+    min-width: 320px;
 }

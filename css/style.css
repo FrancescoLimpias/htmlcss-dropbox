@@ -67,6 +67,9 @@ body{
 #main-pager{
     margin-top: 50px;
 }
+#hero{
+    padding-top: 65px;
+}
 #hero > div{
     display: flex;
     flex-flow: row-reverse;
