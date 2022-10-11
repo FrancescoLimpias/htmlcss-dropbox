@@ -155,15 +155,17 @@ main{
 
 /* BOTTOM PAGER */
 #bottom-pager{
-    height: 400px;
 }
 footer{
     background-color: #000000;
     color: white;
 
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 20px 20px;
 }
 footer a{
     color: white;
+}
+#bottom-spacer{
+    margin-top: 1em;
 }
 /* /BOTTOM PAGER */
