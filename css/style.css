@@ -78,20 +78,44 @@ body{
 #hero{
     padding-top: 65px;
 }
+#hero h1{
+    margin-bottom: 1em;
+    font-size: 60px;
+    font-weight: 800;
+}
 #hero > div{
+    position: relative;
+    
+    font-weight: 600;
+
     display: flex;
-    flex-flow: row-reverse;
+    flex-flow: row;
     flex-wrap: wrap;
 }
 #hero img{
-    flex: 0 0 60%;
+    position: absolute;
+
+    height: fit-content;
     max-width: 60%;
+
+    left: 40%;
 }
 #hero div div{
     flex: 0 0 40%;
 }
-#hero div div *{
+#hero div div > *{
     display: block;
+    margin-bottom: 1em;
+}
+#hero a:last-child{
+    margin-top: 1em;
+    margin-bottom: 0;
+
+    font-size: 40px;
+    font-weight: 800;
+
+    color: black;
+    text-decoration: none;
 }
 /* /Header */
 
