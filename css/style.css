@@ -59,12 +59,14 @@ body{
 main{
     background-color: white;
 }
+
+/* plans */
 #plans{
     display: flex;
     justify-content: space-between;
 }
 .plan{
-    flex: 0 0 30%;
+    flex: 1 0 30%;
 
     border: 1px solid gray;
     border-radius: 5px;
@@ -78,6 +80,73 @@ main{
 }
 .plan .row span{
     display: inline-block;
+}
+
+/* features */
+#features{
+    display: flex;
+    flex-wrap: wrap;
+}
+.feature{
+    flex: 0 0 30%;
+}
+
+/* brands */
+#brands{
+    position: relative;
+
+    width: 100%;
+    padding-top: 33.3%;
+}
+.square{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 33.3%;
+    padding-top: 33.3%;
+}
+.square.center{
+    left: 33.3%;
+}
+.square.right{
+    left: 66.6%;
+}
+.brand{
+    position:absolute;
+
+    background-color: red;
+    border-style: inset;
+    border: 1px solid white;
+}
+.brand.top{
+    top: 0;
+    bottom: 50%;
+}
+.brand.bottom{
+    top: 50%;
+    bottom: 0;
+}
+.brand.left{
+    left: 0;
+    right: 50%;
+}
+.brand.right{
+    left: 50%;
+    right: 0;
+}
+#business-inside{
+    position: relative;
+
+    width: 100%;
+    padding-top: 18%;
+}
+#business-inside > div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 /* /Main */
 /* /MAIN PAGER */
