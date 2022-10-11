@@ -160,6 +160,8 @@ main{
 footer{
     background-color: #000000;
     color: white;
+
+    border-radius: 0 0 10px 10px;
 }
 footer a{
     color: white;
