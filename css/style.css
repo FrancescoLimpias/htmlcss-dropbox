@@ -30,6 +30,14 @@ body{
     margin: auto;
 }
 
+.narrow{
+    max-width: 840px;
+    margin: auto;
+}
+.not-so.narrow{
+    max-width: 1000px;
+}
+
 /* TOP PAGER */
 #top-pager{
     position: fixed;
