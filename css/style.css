@@ -6,9 +6,9 @@
     /* Testing Mode  */
     /* border: 1px dashed orange; */
 }
+
 body{
     font-family: 'Open Sans', sans-serif;
-
     background-color: #b4d0e7;
 }
 
@@ -30,19 +30,17 @@ body{
     margin: auto;
 }
 
-.narrow.document-section{
-    max-width: 700px;
-    margin: auto;
-}
-.not-so.narrow.document-section{
-    max-width: 1000px;
-}
-
 .page-shadow{
     box-shadow: 0 1px 2px black;
 }
-.text-shadow{
-    text-shadow: 0px 15px 20px #6c8091;
+
+.narrow.document-section{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 700px;
+}
+.not-so.narrow.document-section{
+    max-width: 875px;
 }
 
 a{
@@ -50,7 +48,7 @@ a{
 }
 
 .button{
-    padding: 0.7em 0.6em;
+    padding: 6px 0.6em;
     border-radius: 1px;
 
     text-align: center;
@@ -135,6 +133,7 @@ a{
 #hero > div{
     position: relative;
     
+    font-size: 12px;
     font-weight: 600;
 
     display: flex;
@@ -147,16 +146,16 @@ a{
     height: fit-content;
     max-width: 60%;
 
-    left: 40%;
+    left: 35%;
 }
 #hero div div{
-    flex: 0 0 40%;
+    flex: 0 0 32%;
 }
 #hero-text > *{
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 #hero-text span{
-    margin-top: 1em;
+    margin-top: 2em;
     display: block;
 }
 #hero a:last-child{
@@ -175,60 +174,100 @@ a{
 main{
     background-color: white;
 
-    padding-top: 5em;
+    padding-top: 7em;
+}
+main > section{
+    padding-bottom: 80px;
+}
+main h2{
+    font-weight: 600;
+    font-size: xx-large;
+
+    margin-bottom: 1.2em;
 }
 
-/* plans */
-#plans-section h2{
-    margin-bottom: 1em;
-}
+/* Plans */
 #plans-section span:first-of-type{
     margin-right: 1.5em;
 }
+
 #plans{
-    margin-top: 1em;
+    margin-top: 2em;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+/* plans common */
 .plan.section{
-    border: 1px solid gray;
-    border-radius: 5px;
+    border: 1px solid;
+    border-radius: 0.7px;
+
+    font-size: 10px;
+    margin-bottom: 2em;
 }
+.plan hr{
+    border: none;
+    border-top: 1px solid;
+}
+.plan.section, #plans hr{
+    border-color: #ebebed;
+}
+
 .plan.narrow{
-    flex: 0 0 30%;
+    flex: 0 0 31%;
 }
 .plan.wide{
     flex: 1 0 30%;
+    padding-bottom: 2em;
+    margin-bottom: 10em;
 }
 .plan.wide > div{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
+
 .plan > *:not(hr):not(.wrapper), .plan .wrapper > *{
-    padding: 0 0.5em;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .plan .target{
     display: block;
     text-align: center;
+    padding: 0.4em;
+}
+.plan .target i{
+    height: 1em;
+    margin-right: 0.2em;
 }
 
 .plan h4{
-    margin: 1em 0;
+    margin: 1em 0 0.5em;
+    font-size: large;
 }
 
 .plan .price{
     display: block;
+    font-weight: 600;
     margin-bottom: 1em;
 }
 
 .plan .row{
     display: flex;
+    align-items: baseline;
     margin-bottom: 1em;
 }
 .plan .row:first-of-type{
     margin-top: 2em;
+}
+.plan .row:last-of-type{
+    margin-bottom: 5em;
+}
+.plan .row span{
+    margin-left: 6px;
 }
 
 .plan.narrow.section .button.blue{
@@ -237,9 +276,7 @@ main{
 
 .plan hr.narrow{
     width: 20%;
-    margin: 2em 60% 2em 0.5em;
-    border: none;
-    border-top: 1px solid gray;
+    margin: 2em 60% 2em 10%;
 }
 
 .plan .row.blue::before{
@@ -260,10 +297,19 @@ main{
 #contact-partner > div{
     flex: 0 0 40%;
 }
+#contact-partner h4{
+    font-weight: 600;
+    font-size: large;
+    margin-bottom: 0.6em;
+}
+#contact-partner p{
+    margin-bottom: 30px;
+}
 
 /* features */
 #features{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .feature{
@@ -271,10 +317,20 @@ main{
 }
 .feature img{
     width: 100%;
+    margin-bottom: 10px;
+}
+.feature h3{
+    font-weight: 600;
+    font-size: medium;
+    margin-bottom: 1em;
+}
+.feature p{
+    font-size: small;
 }
 
 /* brands */
 #brands{
+    margin-top: 100px;
     position: relative;
 
     width: 100%;
@@ -300,6 +356,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.brand:hover{
+    border: 10px inset rgba(255, 255, 255, 0.26);
 }
 .brand.top{
     top: 0;
@@ -353,7 +412,15 @@ main{
     right: 0;
     bottom: 0;
 
+    padding: 20px;
+    overflow-y: auto;
+
     background-color: #f5f5f5;
+}
+#desc-designit img{
+    width: 60%;
+
+    margin-bottom: 20px;
 }
 
 #business-inside{
@@ -377,18 +444,33 @@ main{
 }
 #business-inside h2{
     flex: 0 0 50%;
+    color: #611440;
+    margin-bottom: initial;
 }
 
 /* Q&A */
+#section-qa > *{
+    margin-bottom: 20px;
+}
+.dropdown:hover p{
+    height: 75px;
+}
 .dropdown span{
     position: relative;
     display: block;
+    font-weight: 600;
 }
 .dropdown span:after{
     position: absolute;
     top: 0;
     right: 1em;
     content: " \02C7";
+}
+.dropdown p{
+    height: 0px;
+    overflow: hidden;
+
+    transition: 0.3s ease;
 }
 /* /Main */
 /* /MAIN PAGER */
@@ -400,7 +482,8 @@ footer{
     background-color: #000000;
     color: white;
 
-    border-radius: 0 0 20px 20px;
+    padding: 30px 10px 22px;
+    border-radius: 0 0 30px 30px;
 }
 footer a{
     color: white;
@@ -415,7 +498,18 @@ footer a{
     padding-right: 1em;
     margin-bottom: 1em;
 }
-#bottom-spacer{
+#site-map section *{
+    margin-bottom: 1em;
+}
+#site-map section h4{
+    font-weight: 600;
+}
+
+footer hr{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.bottom-spacer{
     margin-top: 1em;
 }
 /* /BOTTOM PAGER */
