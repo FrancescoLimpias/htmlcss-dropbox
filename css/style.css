@@ -97,7 +97,17 @@ a{
     height: 50px;
     margin: 0 0.5em;
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+#nav-list li > *{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+#nav-list li:hover:not(:first-child):not(:last-child){
+    border-bottom: 2px solid darkgrey;
+    background-color: #0000000c
+    /* color: white; */
 }
 #nav-list .push{
     margin-left: auto;
