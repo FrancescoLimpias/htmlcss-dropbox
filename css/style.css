@@ -232,6 +232,9 @@ main{
 .feature{
     flex: 0 0 30%;
 }
+.feature img{
+    width: 100%;
+}
 
 /* brands */
 #brands{
