@@ -317,6 +317,8 @@ main{
 
     width: 100%;
     padding-top: 18%;
+
+    background-color: #b4d0e7;
 }
 #business-inside > div{
     position: absolute;
@@ -324,6 +326,25 @@ main{
     bottom: 0;
     right: 0;
     left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#business-inside h2{
+    flex: 0 0 50%;
+}
+
+/* Q&A */
+.dropdown span{
+    position: relative;
+    display: block;
+}
+.dropdown span:after{
+    position: absolute;
+    top: 0;
+    right: 1em;
+    content: " \02C7";
 }
 /* /Main */
 /* /MAIN PAGER */
@@ -331,8 +352,6 @@ main{
 
 
 /* BOTTOM PAGER */
-#bottom-pager{
-}
 footer{
     background-color: #000000;
     color: white;
