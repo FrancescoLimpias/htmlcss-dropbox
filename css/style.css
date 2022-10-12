@@ -31,7 +31,7 @@ body{
 }
 
 .narrow{
-    max-width: 840px;
+    max-width: 700px;
     margin: auto;
 }
 .not-so.narrow{
@@ -43,6 +43,18 @@ body{
 }
 .text-shadow{
     text-shadow: 0px 15px 20px #6c8091;
+}
+
+a{
+    color: blue;
+}
+
+.button.blue{
+    display: block;
+
+    background-color: blue;
+    color:white;
+    text-decoration: none;
 }
 
 
@@ -131,29 +143,85 @@ body{
 main{
     background-color: white;
 
-    padding-top: 3em;
+    padding-top: 5em;
 }
 
 /* plans */
+#plans-section h2{
+    margin-bottom: 1em;
+}
+#plans-section span:first-of-type{
+    margin-right: 1.5em;
+}
 #plans{
+    margin-top: 1em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .plan{
-    flex: 1 0 30%;
+    flex: 0 0 30%;
 
     border: 1px solid gray;
     border-radius: 5px;
 }
-.plan *:not(hr){
-    padding: 0 1em;
+.plan.wide{
+    flex: 1 0 30%;
 }
+.plan *:not(hr){
+    padding: 0 0.5em;
+}
+
 .plan .target{
     display: block;
     text-align: center;
 }
-.plan .row span{
-    display: inline-block;
+
+.plan h4{
+    margin: 1em 0;
+}
+
+.plan .price{
+    display: block;
+    margin-bottom: 1em;
+}
+
+.plan .row{
+    display: flex;
+    margin-bottom: 1em;
+}
+.plan .row:first-of-type{
+    margin-top: 2em;
+}
+
+.plan .button.blue{
+    margin: 2em 0 1em;
+}
+
+.plan hr.narrow{
+    width: 20%;
+    margin: 2em 60% 2em 0.5em;
+    border: none;
+    border-top: 1px solid gray;
+}
+
+.plan .row.blue::before{
+    content: ' \2714';
+    color: blue;
+}
+
+/* partner */
+#contact-partner{
+    display: flex;
+    justify-content: space-between;
+}
+#contact-partner img{
+    flex: 0 0 55%;
+    max-width: 50%;
+    height: fit-content;
+}
+#contact-partner > div{
+    flex: 0 0 40%;
 }
 
 /* features */
@@ -170,28 +238,28 @@ main{
     position: relative;
 
     width: 100%;
-    padding-top: 33.3%;
+    padding-top: 33.3333333333%;
 }
 .square{
     position: absolute;
     top: 0;
     bottom: 0;
 
-    width: 33.3%;
-    padding-top: 33.3%;
+    width: 33.3333333333%;
+    padding-top: 33.3333333333%;
 }
 .square.center{
-    left: 33.3%;
+    left: 33.3333333333%;
 }
 .square.right{
-    left: 66.6%;
+    right: 0%;
 }
 .brand{
     position:absolute;
 
-    background-color: red;
-    border-style: inset;
-    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .brand.top{
     top: 0;
@@ -209,6 +277,41 @@ main{
     left: 50%;
     right: 0;
 }
+.brand img{
+    width: 80%;
+    filter: invert(100%);
+}
+#bd-designit{
+    background-color: #a2d39b;
+}
+#bd-arizona{
+    background-color: #61082b;
+}
+#bd-florida{
+    background-color: #0093ce;
+}
+#bd-topps{
+    background-color: #ff1c1c;
+}
+#bd-relief{
+    background-color: #d5001f;
+}
+#bd-hearst{
+    background-color: #b4d0e7;
+}
+#bd-lonely{
+    background-color: #0d2481;
+}
+#bd-clear{
+    background-color: #ffd830;
+}
+
+#desc-designit{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 #business-inside{
     position: relative;
 
